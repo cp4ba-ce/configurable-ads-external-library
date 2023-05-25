@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <properties>
+        <archive.repository.snapshot.url>https://xxx/libs-snapshot-local</archive.repository.snapshot.url>
+        <archive.repository.release.url>https://xxx/libs-release-local</archive.repository.release.url>
+        <ads-mojo.version>10.2.0</ads-mojo.version>
+        <ads-annotations.version>2.0.2</ads-annotations.version>
+    </properties>
+
+    <groupId>ads.samples</groupId>
+    <artifactId>externalLibrary</artifactId>
+    <version>1.1.11</version>
+    <packaging>pom</packaging>
+
+    
+    <modules>
+        <module>sampleLibrary</module>
+        <module>adsSampleLibrary</module>
+    </modules>
+
+    <distributionManagement>
+        <snapshotRepository>
+            <id>maven-snapshots</id>
+            <url>${archive.repository.snapshot.url}</url>
+        </snapshotRepository>
+        <repository>
+            <id>maven-release</id>
+            <url>${archive.repository.release.url}</url>
+        </repository>
+    </distributionManagement>
+</project>

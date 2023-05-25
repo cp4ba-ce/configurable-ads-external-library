@@ -1,0 +1,32 @@
+
+# ads.samples.externalLibrary.PetStore
+ads.samples.externalLibrary.PetStore#concept.label = pet store
+ads.samples.externalLibrary.PetStore.countPets()#phrase.navigation = pet store.countPets()
+ads.samples.externalLibrary.PetStore.countPetsCMSsl()#phrase.navigation = pet store.countPetsCMSsl()
+
+# org.jetbrains.annotations.Contract
+org.jetbrains.annotations.Contract#concept.label = contract
+org.jetbrains.annotations.Contract.pure()#phrase.navigation = {this} ist pure
+org.jetbrains.annotations.Contract.pure()#phrase.negative_predicate = {this} ist nicht pure
+org.jetbrains.annotations.Contract.value()#phrase.navigation = {this}.value()
+
+# org.jetbrains.annotations.Nls
+org.jetbrains.annotations.Nls#concept.label = nls
+
+# org.jetbrains.annotations.NonNls
+org.jetbrains.annotations.NonNls#concept.label = non nls
+
+# org.jetbrains.annotations.NotNull
+org.jetbrains.annotations.NotNull#concept.label = not null
+org.jetbrains.annotations.NotNull.value()#phrase.navigation = {this}.value()
+
+# org.jetbrains.annotations.Nullable
+org.jetbrains.annotations.Nullable#concept.label = nullable
+org.jetbrains.annotations.Nullable.value()#phrase.navigation = {this}.value()
+
+# org.jetbrains.annotations.PropertyKey
+org.jetbrains.annotations.PropertyKey#concept.label = property key
+org.jetbrains.annotations.PropertyKey.resourceBundle()#phrase.navigation = {this}.resourceBundle()
+
+# org.jetbrains.annotations.TestOnly
+org.jetbrains.annotations.TestOnly#concept.label = test only

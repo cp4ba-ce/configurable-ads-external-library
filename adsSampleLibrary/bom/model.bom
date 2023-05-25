@@ -1,0 +1,62 @@
+
+property loadGetterSetterAsProperties "true"
+package ads.samples.externalLibrary;
+
+
+public class PetStore
+{
+    public static int countPets()
+                throws java.io.IOException
+                property pureFunction "true";
+    public static int countPetsCMSsl()
+                throws java.io.IOException
+                property pureFunction "true";
+}
+
+package org.jetbrains.annotations;
+
+
+public interface Contract
+        extends java.lang.annotation.Annotation
+{
+    public boolean pure()
+                property pureFunction "true";
+    public string value()
+                property pureFunction "true";
+}
+
+public interface Nls
+        extends java.lang.annotation.Annotation
+{
+}
+
+public interface NonNls
+        extends java.lang.annotation.Annotation
+{
+}
+
+public interface NotNull
+        extends java.lang.annotation.Annotation
+{
+    public string value()
+                property pureFunction "true";
+}
+
+public interface Nullable
+        extends java.lang.annotation.Annotation
+{
+    public string value()
+                property pureFunction "true";
+}
+
+public interface PropertyKey
+        extends java.lang.annotation.Annotation
+{
+    public string resourceBundle();
+}
+
+public interface TestOnly
+        extends java.lang.annotation.Annotation
+{
+}
+
